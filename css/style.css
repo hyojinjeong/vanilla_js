@@ -1,0 +1,10 @@
+body {
+    height: 100vh;
+    /* background-image : url('../img/nala1.jpg'); */
+    background-repeat : no-repeat;
+    background-size : cover;
+  }
+
+  .hidden{
+      display: none;
+  }
