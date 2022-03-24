@@ -2,6 +2,9 @@ const icon = document.querySelector("#weather div:nth-child(2)");
 const weather = document.querySelector("#weather div:last-child");
 const API_KEY = "3946e1ef5977884133653eea1bc27b98";
 
+weather.style.fontSize = "large";
+weather.style.marginLeft = "15px";
+
 function onGeoOk(position){
     const lat = position.coords.latitude;
     const lng = position.coords.longitude;
@@ -11,7 +14,7 @@ function onGeoOk(position){
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
+
         let iconCode = data.weather[0].icon;
         let iconUrl = "http://openweathermap.org/img/w/" + iconCode + ".png";  
         icon.innerHTML = `<img src=${iconUrl} style="background-color:white;">`  
