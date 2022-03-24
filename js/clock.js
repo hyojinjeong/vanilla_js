@@ -9,10 +9,14 @@ function getTime(){
 
     let hours = today.getHours();
     let minutes = String(today.getMinutes()).padStart(2, '0');
-    let seconds = String(today.getSeconds()).padStart(2, '0');
+    let state = 'AM';
 
-    clockDate.innerText = `${year}.${month}.${day}`;    
-    clockTime.innerText = `${hours}:${minutes}:${seconds}`;     
+    if(hours > 12){
+        hours  = (hours % 12);
+        state =  'PM';
+    }
+    clockDate.innerText = `${year}. ${month}. ${day}`;    
+    clockTime.innerText = `${hours}:${minutes} ${state}`;     
 }
 
 getTime();

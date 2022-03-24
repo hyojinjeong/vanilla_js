@@ -1,6 +1,5 @@
+
 body {
-    height: 100vh;
-    /* background-image : url('../img/nala1.jpg'); */
     background-repeat : no-repeat;
     background-size : cover;
     color : white;
@@ -11,42 +10,80 @@ body {
 }
 
 .mainItemsDiv{
+    height: 50vh;    
     display : flex;
     flex-direction: column;    
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     border-color: white;
 }
 
+.todoItemsDiv{
+    height: 30vh;  
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+}
 .js-date {
-    font-size: 2.5em;    
+    font-size: 1.5em;    
 }
 
 .js-clock {
-    font-size: 3.5em;    
+    font-size: 5.5em;    
 }
 
 #weather {
-    font-size: 1.5em;
+    font-size: 1.5em; 
+    display : flex;
+    flex-direction: column;    
+    justify-content: space-between;  
+    margin : 20px;  
 }
-/* #login-form{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
+
+input, button {
+    background-color: transparent;
+    border: white;
+    color: white;
+    border: solid 2px white;
+    border-radius: 5px;    
+    padding : 5px 8px;    
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+  }
+input::placeholder {
+    color : white;
+} 
 
 #todo-form{
-  position: absolute;
-  left: 50%;
-  top: 55%;
-    transform: translate(-50%, -50%);
+    margin-top: 5px;
 }
 
-#todo-list{
-    position: absolute;
-    left: 50%;
-    top: 60%;
-      transform: translate(-50%, -50%);
-  } */
+#todo-form input {
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: white;
+    margin-bottom: 20px;    
+  }
+
+#login-form{
+    margin-top: 50px;
+}  
+
+#greeting{
+    margin-top: 50px;    
+    margin-bottom: 20px;
+}  
+
+#todo-list button{
+    border: transparent;
+    padding-left: 100px;
+    /* bottom: 5px;
+    right: 5px;
+    width: 70px;          */
+}
+
+#todo-list {
+    margin-top: 50px;
+}

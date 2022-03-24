@@ -1,6 +1,6 @@
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
-const greeting = document.querySelector("#greeting h1");
+const greeting = document.querySelector("#greeting h3");
 
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
@@ -21,8 +21,18 @@ function onLoginSubmit(event) {
 
 function paintGreetings(username) {
   if(username !== null || username !== ''){
+    let time = Number(new Date().getHours());
+    let greetingWord = '';
     greeting.classList.remove(HIDDEN_CLASSNAME);
-    greeting.innerText = `Hello ${username}!`;    
+
+    if(time >= 0 && time <= 11){
+      greetingWord = 'Good morning,';
+    } else if(time >= 12 && time <= 19){
+      greetingWord = 'Good afternoon,';
+    } else if(time >= 20 && time <= 24){
+      greetingWord = 'Good night,'
+    }
+    greeting.innerText = `${greetingWord} ${username}!`;    
   }
 }
 

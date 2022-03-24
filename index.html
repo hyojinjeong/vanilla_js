@@ -5,27 +5,30 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="css/style.css">       
   </head>
-  <body>   
-    <div id="weather">
-      <span></span>
-    </div>   
-    <div class = "mainItemsDiv">  
-      <h1>Now time is</h1>
-      <div class="js-date"></div> 
-      <div class="js-clock"></div>       
+  <body> 
+    <div id = "weather">
+      <div></div>
+      <div></div>
+      <div></div>      
+    </div>     
+    <div class = "mainItemsDiv">   
+      <div class="js-clock"></div> 
+      <div class="js-date"></div>
       <form id="login-form"> 
-        <input type="text" required />
+        <input type="text" placeholder="Please write your ID" required />
         <button>Log In</button>
       </form>
       <div id="greeting">
-        <h1 class="hidden"></h1>
-      </div>      
+        <h3 class="hidden"></h3>
+      </div> 
       <form id="todo-form">
-        <input type="text" placeholder="Write a To do and Press Enter" required />
-      </form>
+        <input type="text" placeholder="✨ Write a To do!" required />
+      </form>                           
+    </div>  
+    <div class = "todoItemsDiv">
       <ul id="todo-list">
-      </ul>
-    </div> 
+      </ul>  
+    </div>       
   </body>
   <script src="js/clock.js"></script> 
   <script src="js/background.js"></script>     
