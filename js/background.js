@@ -1,6 +1,5 @@
-const images = ["nala1.jpg", "nala2.jpg", "nala3.jpg"];
+const images = ["starry_night1.jpg", "starry_night2.jpg", "starry_night3.jpg"];
 
 const chosenImage = images[Math.floor(Math.random() * images.length)];
-const imgUrl = 'url(' + '../vanilla_js/img/' + chosenImage + ')';
-console.log(imgUrl);
+const imgUrl = 'url(' + '../vanillaJS/img/' + chosenImage + ')';
 document.body.style.backgroundImage = imgUrl;
