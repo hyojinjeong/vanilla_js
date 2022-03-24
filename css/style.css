@@ -10,7 +10,7 @@ body {
 }
 
 .mainItemsDiv{
-    height: 50vh;    
+    height: 100vh;    
     display : flex;
     flex-direction: column;    
     justify-content: center;
@@ -19,7 +19,7 @@ body {
 }
 
 .todoItemsDiv{
-    height: 30vh;  
+    height: 5vh;     
     position: absolute;
     left: 50%;
     top: 70%;
@@ -56,7 +56,7 @@ input::placeholder {
 } 
 
 #todo-form{
-    margin-top: 5px;
+    margin-top: 50px;
 }
 
 #todo-form input {
